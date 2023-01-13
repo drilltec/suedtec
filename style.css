@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family= Righteous & display família= Justo &família= Sarala:wght@400;700 & swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(148,187,233,1) 100%);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.logo{
+    border-radius: 50%;
+    mix-blend-mode:luminosity;
+    
+    
+}
+
+
+
+.navbar{
+    display: flex;
+    gap: 20px;
+}
+
+.conteudo{
+    border-top: 0.5px solid rgb(215, 219, 240);
+    margin-bottom: 50px;
+    
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.div-img-principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 33px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.assist{
+    font-size: 35px;
+}
+ 
+h2{
+    font-size: 80px;
+    color: rgb(13, 25, 134);
+    font-family: 'Righteous', cursiva;
+    position: relative;
+}
+
+h2::before{
+    content:attr(data-text) ;
+    position: absolute;
+    color: white;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right:   rgb(100, 205, 231);
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px rgb(8, 8, 8)) drop-shadow(0 0 50px);
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+.img-marcas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.img-marcas-img{
+    width: 550.13px;
+    height: 150.31px;
+}
+
+.conteudo-img{
+    padding: 25px;
+    width: 300.13px;
+    height: 400.31px;
+    mix-blend-mode: multiply;
+    
+}
+
+.segunda-sec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 24px;
+    padding: auto;
+}
+
+footer{
+    border-top: 0.5px solid rgb(215, 219, 240);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.bandeiras{
+    width: 300px;
+height: 50px;
+mix-blend-mode: multiply;
+
+}
+
+.navbar-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media( max-width:785px){
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 22px;
+    }
+
+    p{
+        font-size: 21px;
+        text-align:justify;
+    }
+
+    .assist{
+        font-size: 25px;
+        color: rgb(13, 15, 13);
+        border-color: black;
+        
+    }
+
+    .conteudo-img{
+        align-items: center;
+       
+        width: 350.13px;
+        height: 350.31px;
+        mix-blend-mode: multiply;
+        
+    }
+
+    .img-marcas-img{
+        width: 250.13px;
+        height: 50.31px;
+    }
+
+    .segunda-sec{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer{
+        border-top: 0.5px solid rgb(215, 219, 240);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    
+.bandeiras{
+    width: 150px;
+height: 25px;
+mix-blend-mode: multiply;
+
+}
+
+.text-bandeiras{
+    font-size: 13px;
+}
+
+
+}
+
+.whats{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
