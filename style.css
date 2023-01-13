@@ -166,7 +166,7 @@ mix-blend-mode: multiply;
 
     p{
         font-size: 21px;
-        text-align:justify;
+        text-align:center;
     }
 
     .assist{
@@ -225,8 +225,9 @@ mix-blend-mode: multiply;
 }
 
 .whats{
+    text-align: center;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 40px;
+    right: 10px;
     z-index: 9999;
 }
